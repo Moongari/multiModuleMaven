@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+                <!-- Etape 1 :nous ajoutons un context en integrant le principe d'annotation
+                nous n'avons plus besoin de definir cela dans le fichier xml nous declarons directement
+                les annotations dans nos classes java pour etablir l'injection de dependance
+                -->
+                <!--<context:annotation-config/>-->
+
+                <!-- Etape 2 nous utilisons le component-scan       -->
+        <context:component-scan base-package="learnProgramming"/>
+
+
+       <!-- <bean id="numberGenerator" class="learnProgramming.NumberGeneratorImpl"/>-->
+
+        <!--<bean id ="game" class="learnProgramming.GameImpl">-->
+        <!---<property name="numberGenerator" ref="numberGenerator"></property> -->
+        <!--</bean>-->
+
+
+
+                <!---
+                 <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+                -->
+
+
+
+</beans>
