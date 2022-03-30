@@ -9,6 +9,7 @@ public class GameConfig {
     //== fields ==
 
     private int maxNumber = 50;
+    private int guessCount = 8;
 
 
 
@@ -18,5 +19,9 @@ public class GameConfig {
         return maxNumber;
     }
 
+    @Bean
+    public int guessCount(){
+        return guessCount;
+    }
 
 }
