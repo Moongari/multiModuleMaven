@@ -1,9 +1,13 @@
-# Titre du projet
+# Multi Module Projet Spring
 _(juste en dessous des badges sympatiques à placer)_
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
 Ce projet permet de comprendre les subtilités de spring 5
+en travaillant sur le concept de multi module
+l'idée etant de pouvoir decouper le projet en module et de créer les différentes dependances grace a MAVEN.
+configurer les différents fichiers pom.xml afin de gerer l'heritage des differentes dependances.
+
 au travers d'un jeu qui permet de deviner un nombre compris entre certaines valeurs generer aleatoirement.
 
 ## Pour commencer
