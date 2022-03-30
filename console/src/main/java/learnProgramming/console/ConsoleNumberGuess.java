@@ -48,8 +48,9 @@ public class ConsoleNumberGuess {
                 if(!playAgainSgtring.equalsIgnoreCase("y")){
                     break;
                 }
+                game.reset();
             }
-            game.reset();
+
         }
 
     }
