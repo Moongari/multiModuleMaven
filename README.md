@@ -63,7 +63,7 @@ _(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## Auteurs
 
-* **Moungari Moustafa ** _alias_ [@outout14](https://github.com/Moongari)
+* **Moungari Moustafa ** _alias_ [@Moongari](https://github.com/Moongari)
 
 
 
