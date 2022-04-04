@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-
+@Component
 public class GameImpl implements Game{
 
 
@@ -19,9 +19,13 @@ public class GameImpl implements Game{
 
     @Autowired
     private NumberGenerator numberGenerator;
+
+    private final  int guessCount;
+
     @Autowired
-    @GuessCount
-    private int guessCount;
+    public GameImpl(@GuessCount int guessCount) {
+        this.guessCount = guessCount;
+    }
 
     private int number;
     private int guess;

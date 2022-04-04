@@ -2,10 +2,7 @@ package learnProgramming.console;
 
 
 
-import learnProgramming.config.AppConfig;
-import learnProgramming.Game;
-import learnProgramming.MessageGenerator;
-import learnProgramming.NumberGenerator;
+import learnProgramming.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -25,9 +22,9 @@ public class Main {
         //create the context (container)
 
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
 
-
+/*
         NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 
         //call method to get a random number
@@ -44,7 +41,7 @@ public class Main {
 
         MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
         log.info("getMainMessage = {}", messageGenerator.getMainMessage());
-        log.info("getResultMessage = {}", messageGenerator.getResultMessage());
+        log.info("getResultMessage = {}", messageGenerator.getResultMessage());*/
 
 
         //close context container

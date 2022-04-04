@@ -5,10 +5,12 @@ import learnProgramming.MaxNumber;
 import learnProgramming.MinNumber;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 
+@ComponentScan(basePackages = "learnProgramming")
 @Configuration
 @PropertySource("file:C:\\Users\\moungamo\\IdeaProjects\\multiModuleProjectMaven\\core\\src\\main\\resources\\application.properties")
 public class GameConfig {
